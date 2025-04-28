@@ -1,0 +1,15 @@
+curl -X POST https://login.playground.klarna.com/oauth2/v1/token \
+  -u "klarna_test_client_RXlPOG14LS9tKVVILXROUUVxV0E2OEVFP2k0NVFJRmMsMGE2N2U5NzMtYjU0Ny00ZGQxLWFlZjAtOTM3YTZlNjg0Mzk5LDEsZ29iam5TRGpYTlNzUkZsTkpKY2NhRUNwcFMxNFk5WXl4NGJwTEh5aUVnTT0:klarna_test_api_IzAwazckKjVKYk4zT1FCMHpVWU02YXYtM1ckYTJXaDYsN2QxYWQ4NzUtNWQzZC00NWVjLWFkMjAtNGRiMGI4MThmNDRlLDEsRVVZU3kvTUthNU4ybVM0azNZUWNMOHNZcFd4ekNWVmFLbnB4UEZneDN4VT0" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=authorization_code" \
+  -d "code=ory_ac_ASchumb92wrPQ2IvyMf3zR9QC2nZeB05vYjImIlA4os._fWeSOD46vgTp2l3Y8bNoGXeMCNlV18gBjePgWYT-kQ" \
+  -d "redirect_uri=https://www.example.com"
+
+###
+curl -v -X POST https://login.klarna.com/oauth2/v1/token \
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -u "klarna_test_client_RXlPOG14LS9tKVVILXROUUVxV0E2OEVFP2k0NVFJRmMsMGE2N2U5NzMtYjU0Ny00ZGQxLWFlZjAtOTM3YTZlNjg0Mzk5LDEsZ29iam5TRGpYTlNzUkZsTkpKY2NhRUNwcFMxNFk5WXl4NGJwTEh5aUVnTT0:klarna_test_api_IzAwazckKjVKYk4zT1FCMHpVWU02YXYtM1ckYTJXaDYsN2QxYWQ4NzUtNWQzZC00NWVjLWFkMjAtNGRiMGI4MThmNDRlLDEsRVVZU3kvTUthNU4ybVM0azNZUWNMOHNZcFd4ekNWVmFLbnB4UEZneDN4VT0" \
+  -d "grant_type=authorization_code" \
+  -d "code=ory_ac_ASchumb92wrPQ2IvyMf3zR9QC2nZeB05vYjImIlA4os._fWeSOD46vgTp2l3Y8bNoGXeMCNlV18gBjePgWYT-kQ" \
+  -d "redirect_uri=https://www.example.com"
